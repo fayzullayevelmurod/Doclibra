@@ -106,15 +106,21 @@ address {
 
 .btn {
     &_white {
+        white-space: nowrap;
         font-size: 14px;
         font-weight: 500;
         line-height: 19.6px;
         color: $color-black;
         border: 1px solid $color-blue-dark;
         border-radius: 8px;
+        @include flex-center();
+        gap: 12px;
     }
 
     &_blue {
+        white-space: nowrap;
+        @include flex-center();
+        gap: 12px;
         color: $color-white;
         font-size: 14px;
         font-weight: 500;
@@ -145,6 +151,7 @@ label {
 .header {
     .main_container {
         padding: 20px 0;
+        gap: 10px;
     }
 
     &_left {
@@ -176,6 +183,16 @@ label {
             }
         }
     }
+
+    &_btns {
+        @include flex-center();
+        gap: 12px;
+        a {
+            width: 130px;
+            height: 48px;
+            padding: 14px 24px;
+        }
+    }
 }
 
 .nav {
@@ -200,6 +217,49 @@ label {
     }
 }
 // header
+
+// home
+.home {
+    background-image: url('../images/home_desktop_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &_in {
+        padding-top: 28px;
+    }
+
+    h1 {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 57.6px;
+        color: $color-black;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 26px;
+        color: $color-black;
+        margin: 16px 0 32px 0;
+    }
+
+    &_btns {
+        @include flex-center();
+        gap: 12px;
+
+        a {
+            height: 48px;
+            padding: 18px 36px;
+        }
+    }
+
+    &_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+// home
 
 
 

@@ -61,14 +61,22 @@ address {
 }
 
 .btn_white {
+  white-space: nowrap;
   font-size: 14px;
   font-weight: 500;
   line-height: 19.6px;
   color: #141414;
   border: 1px solid #37609B;
   border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 .btn_blue {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 12px;
   color: #ffffff;
   font-size: 14px;
   font-weight: 500;
@@ -94,6 +102,7 @@ label {
 
 .header .main_container {
   padding: 20px 0;
+  gap: 10px;
 }
 .header_left {
   gap: 40px;
@@ -122,6 +131,16 @@ label {
 .header_search_desktop input:focus {
   outline: none;
 }
+.header_btns {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.header_btns a {
+  width: 130px;
+  height: 48px;
+  padding: 14px 24px;
+}
 
 .nav {
   background: #F5F6F8;
@@ -140,7 +159,43 @@ label {
   color: #141414;
 }
 
-@media only screen and (max-width: 993px) {
+.home {
+  background-image: url("../images/home_desktop_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home_in {
+  padding-top: 28px;
+}
+.home h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  color: #141414;
+}
+.home p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #141414;
+  margin: 16px 0 32px 0;
+}
+.home_btns {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.home_btns a {
+  height: 48px;
+  padding: 18px 36px;
+}
+.home_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1300px) {
   .main_container {
     max-width: calc(100% - 60px);
   }
