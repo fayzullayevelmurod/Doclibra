@@ -1,3 +1,12 @@
+@media only screen and (min-width: 1300px) {
+    .header {
+        .search_media,
+        .search_media.active {
+            display: none;
+        }
+    }
+}
+
 @media only screen and (max-width: 1300px) {
     .main {
         &_container {
@@ -179,6 +188,7 @@
 
     .header {
         border-bottom: 1px solid $color-line;
+
         .burger {
             display: flex;
             align-items: center;
@@ -198,6 +208,12 @@
 
         .search_btn {
             margin-right: 0;
+        }
+
+        .search_media {
+            top: 100%;
+            border-top: 1px solid $color-line;
+            border-bottom: 1px solid $color-line;
         }
     }
 
