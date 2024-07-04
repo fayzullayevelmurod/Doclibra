@@ -70,9 +70,102 @@
 
 @media only screen and (max-width: 993px) {
 
+    .mb-48 {
+        margin-bottom: 40px;
+    }
+
+    .btn {
+        &_white {
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        &_blue {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    .header {
+
+        .main_container {
+            padding: 16px 0;
+        }
+
+        &_search_desktop {
+            display: none !important;
+        }
+
+        .search_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            margin-right: 20px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &_btns {
+            a {
+                height: 46px;
+                width: 120px;
+
+                img {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+    }
+
+    .home {
+        background-image: url('../images/home_table_bg.png');
+        text-align: center;
+
+        &_in {
+            padding-top: 40px;
+            gap: 40px;
+            flex-direction: column-reverse;
+        }
+
+        h1 {
+            font-size: 40px;
+            line-height: 48px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 23px;
+        }
+
+        &_btns {
+            justify-content: center;
+
+            a {
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+    }
+
+    .nav {
+        .main_container {
+            padding: 16px 0;
+        }
+
+        a {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
 }
 
 @media only screen and (max-width: 650px) {
+
     .main {
         &_container {
             max-width: calc(100% - 32px);
@@ -81,6 +174,63 @@
         &_title {
             font-size: 20px;
             line-height: 24px;
+        }
+    }
+
+    .header {
+        border-bottom: 1px solid $color-line;
+        .burger {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &_logo {
+            max-width: 171px;
+        }
+
+        &_btns {
+            gap: 24px;
+            a {
+                display: none;
+            }
+        }
+
+        .search_btn {
+            margin-right: 0;
+        }
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .home {
+        background-image: url('../images/home_media_bg.png');
+
+        &_in {
+            padding-top: 32px;
+            gap: 32px;
+        }
+
+        h1 {
+            font-size: 28px;
+            line-height: 33px;
+        }
+
+        p {
+            margin: 16px 0 24px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &_btns {
+
+            a {
+                width: calc(100% / 2);
+                font-size: 14px;
+                line-height: 21px;
+            }
         }
     }
 

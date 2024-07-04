@@ -117,13 +117,13 @@ address {
         color: $color-black;
         border: 1px solid $color-blue-dark;
         border-radius: 8px;
-        @include flex-center();
+        @include flex-full-center();
         gap: 12px;
     }
 
     &_blue {
         white-space: nowrap;
-        @include flex-center();
+        @include flex-full-center();
         gap: 12px;
         color: $color-white;
         font-size: 14px;
@@ -153,6 +153,7 @@ label {
 
 // header
 .header {
+    position: relative;
     .main_container {
         padding: 20px 0;
         gap: 10px;
@@ -188,6 +189,10 @@ label {
         }
     }
 
+    .search_btn {
+        display: none;
+    }
+
     &_btns {
         @include flex-center();
         gap: 12px;
@@ -195,6 +200,57 @@ label {
             width: 130px;
             height: 48px;
             padding: 14px 24px;
+        }
+    }
+
+    .burger {
+        display: none;
+
+        .close_btn {
+            display: none;
+        }
+    }
+
+    .search_media {
+        position: absolute;
+        width: 100%;
+        padding: 16px;
+        background: $color-white;
+        @include flex-center();
+        gap: 16px;
+        border-top: 1px solid $color-line;
+        border-bottom: 1px solid $color-line;
+
+        &_block {
+            width: 100%;
+            border-radius: 8px;
+            background: $color-fon;
+            padding: 14px 16px;
+            gap: 12px;
+        }
+
+        label {
+            @include flex-full-center();
+        }
+
+        input {
+            width: 100%;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            color: $color-grey;
+            border: none;
+            background: transparent;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .search_close {
+            min-width: 18px;
+            min-height: 18px;
+            @include flex-full-center();
         }
     }
 }
