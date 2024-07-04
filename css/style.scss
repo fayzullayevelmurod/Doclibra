@@ -376,6 +376,9 @@ label {
     }
 
     &_bottom {
+        position: absolute;
+        width: 90%;
+        bottom: 32px;
         display: flex;
         flex-direction: column;
         gap: 12px;
@@ -469,6 +472,7 @@ label {
     }
 
     .btn_white {
+        white-space: wrap;
         font-size: 16px;
         font-weight: 500;
         line-height: 22.4px;
