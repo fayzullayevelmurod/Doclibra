@@ -104,6 +104,10 @@ address {
     }
 }
 
+.mb-48 {
+    margin-bottom: 48px;
+}
+
 .btn {
     &_white {
         white-space: nowrap;
@@ -260,6 +264,128 @@ label {
     }
 }
 // home
+
+// services
+.services {
+
+    &_card {
+        padding: 32px;
+        background: $color-fon;
+        height: 100%;
+    }
+
+    h6 {
+        margin: 24px 0 16px 0;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 26px;
+        color: $color-black;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        color: $color-black;
+    }
+}
+// services
+
+// category
+.category {
+    &_list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .btn_white {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22.4px;
+        color: $color-black;
+        border: 1px solid $color-line;
+        padding: 18px 36px;
+    }
+}
+// category
+
+// last_added
+.last_added {
+
+    &_btns {
+        @include flex-center();
+        gap: 32px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: -16px;
+            height: 21px;
+            width: 1px;
+            background: $color-line;
+        }
+    }
+
+    &_card {
+        background: $color-fon;
+        padding: 20px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &_top {
+            display: flex;
+            align-items: start;
+            gap: 24px;
+
+            img {
+                border-radius: 4px;
+            }
+        }
+
+        &_bottom {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+
+            a {
+                white-space: nowrap;
+                @include flex-center();
+                gap: 8px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21px;
+                color: $color-grey;
+            }
+        }
+
+        h6 {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            color: $color-black;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            color: $color-black;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+    }
+
+
+}
+// last_added
 
 
 

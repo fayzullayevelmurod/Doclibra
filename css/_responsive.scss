@@ -3,11 +3,73 @@
         &_container {
             max-width: calc(100% - 60px);
         }
+
+        &_title {
+            font-size: 22px;
+            line-height: 26px;
+        }
+    }
+
+    .last_added {
+
+        &_btns {
+            display: none;
+        }
+
+        &_card {
+            gap: 12px;
+            padding: 16px;
+
+            &_top {
+                gap: 16px;
+
+                img {
+                    width: 68px;
+                    height: 98px;
+                    border-radius: 4px;
+                }
+            }
+        }
+
+        h6 {
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    .category {
+        .btn_white {
+            padding: 16px 20px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    .services {
+        &_card {
+            padding: 24px;
+        }
+
+        h6 {
+            font-size: 18px;
+            line-height: 23px;
+        }
+
+        p {
+            font-size: 12px;
+            line-height: 18px;
+        }
     }
 }
 
 @media only screen and (max-width: 993px) {
-    
+
 }
 
 @media only screen and (max-width: 650px) {
@@ -15,5 +77,31 @@
         &_container {
             max-width: calc(100% - 32px);
         }
+
+        &_title {
+            font-size: 20px;
+            line-height: 24px;
+        }
     }
+
+    .category {
+        .btn_white {
+            padding: 16px 18px;
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+
+    .services {
+        &_card {
+            padding: 20px;
+        }
+
+        h6 {
+            margin: 20px 0 16px 0;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
 }
