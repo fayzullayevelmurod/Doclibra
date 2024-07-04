@@ -276,7 +276,7 @@ label {
   top: 69px;
   left: -100%;
   width: 100%;
-  height: calc(100vh - 68px);
+  height: calc(100svh - 68px);
   padding: 32px 16px;
   background: #ffffff;
   display: flex;
@@ -292,7 +292,7 @@ label {
 .media_menu_bottom {
   position: absolute;
   width: 90%;
-  bottom: 90px;
+  bottom: 32px;
   display: flex;
   flex-direction: column;
   gap: 12px;
