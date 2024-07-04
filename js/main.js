@@ -12,3 +12,15 @@ search_close.addEventListener('click', () => {
     search_media.classList.remove('active');
 })
 // search
+
+// burger
+let burger = document.querySelector('.burger');
+let media_menu = document.querySelector('.media_menu');
+let body = document.querySelector('body');
+
+burger.addEventListener('click', () => {
+    media_menu.classList.toggle('active');
+    body.classList.toggle('active');
+    burger.classList.toggle('active');
+})
+// burger
