@@ -439,6 +439,65 @@ label {
   -webkit-box-orient: vertical;
 }
 
+.footer {
+  background: #F5F6F8;
+}
+.footer_top {
+  padding: 48px 0;
+  display: flex;
+  gap: 24px;
+}
+.footer_bottom {
+  border-top: 1px solid #D2DAE1;
+  padding: 24px 0;
+}
+.footer_bottom a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #707D89;
+}
+.footer .media_list_blocks {
+  display: none;
+}
+.footer h6 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #141414;
+  margin-bottom: 16px;
+}
+.footer a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #141414;
+}
+.footer .category {
+  border: 1px solid red;
+}
+.footer .category_lists {
+  display: flex;
+  gap: 24px;
+}
+.footer .category_list {
+  width: calc(33.3333333333% - 24px);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer .category_list_block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer .about_list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 @media only screen and (min-width: 1300px) {
   .header .search_media,
   .header .search_media.active {
@@ -492,6 +551,22 @@ label {
   .services p {
     font-size: 12px;
     line-height: 18px;
+  }
+  .footer_top {
+    padding: 40px 0;
+    flex-direction: column;
+  }
+  .footer a {
+    font-size: 12px;
+    line-height: 21px;
+  }
+  .footer .category_list {
+    width: calc(33.3333333333% - 15px);
+  }
+  .footer .about_list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
   }
 }
 @media only screen and (max-width: 993px) {
@@ -561,6 +636,28 @@ label {
   .nav a {
     font-size: 14px;
     line-height: 18px;
+  }
+  .footer .about_list {
+    gap: 12px 24px;
+  }
+  .footer .category_lists {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .footer .category_list {
+    gap: 12px;
+    width: calc(50% - 7px);
+  }
+  .footer .list_blocks {
+    display: none;
+  }
+  .footer .media_list_blocks {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+  }
+  .footer .media_list_blocks .category_list_block {
+    width: calc(50% - 7px);
   }
 }
 @media only screen and (min-width: 650px) {
