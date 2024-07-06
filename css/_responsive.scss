@@ -19,6 +19,20 @@
         }
     }
 
+    .breadcrumb {
+        a,
+        span {
+            font-size: 12px;
+            list-style: 18px;
+        }
+    }
+
+    .header {
+        &_search_desktop {
+            width: 400px;
+        }
+    }
+
     .last_added {
 
         &_btns {
@@ -73,6 +87,14 @@
         p {
             font-size: 12px;
             line-height: 18px;
+        }
+    }
+
+    .category_block {
+        .card_btns {
+            .date, .date_line {
+                display: none;
+            }
         }
     }
 

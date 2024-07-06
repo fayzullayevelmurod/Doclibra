@@ -117,6 +117,18 @@ label {
   padding: 20px 0;
   gap: 10px;
 }
+.header .user_btn {
+  display: none;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.6px;
+  color: #37609B;
+}
+.header .user_btn img {
+  flex-shrink: 0;
+}
 .header_logo .text-logo {
   font-size: 24px;
   text-transform: uppercase;
@@ -271,6 +283,22 @@ label {
   color: #141414;
 }
 
+.breadcrumb {
+  margin-top: 24px;
+}
+.breadcrumb .main_container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+.breadcrumb a, .breadcrumb span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #707D89;
+}
+
 .media_menu {
   position: fixed;
   top: 69px;
@@ -399,7 +427,7 @@ label {
 }
 .last_added_card_top {
   display: flex;
-  align-items: start;
+  align-items: stretch;
   gap: 24px;
 }
 .last_added_card_top img {
@@ -437,6 +465,75 @@ label {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+}
+
+.category_title h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  color: #141414;
+  margin: 32px 0;
+}
+
+.category_block_card {
+  display: flex;
+  align-items: stretch;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 8px;
+  background: #F5F6F8;
+}
+.category_block .card_img img {
+  width: 120px;
+  height: 170px;
+}
+.category_block h6 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #141414;
+}
+.category_block p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #141414;
+  margin: 12px 0;
+}
+.category_block .card_block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.category_block .card_btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.category_block .card_btns_left, .category_block .card_btns_right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.category_block .card_btns a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #707D89;
+}
+.category_block .card_btns a img {
+  width: 18px;
+  height: 18px;
+}
+.category_block .card_btns .line {
+  height: 21px;
+  width: 1px;
+  background: #D2DAE1;
 }
 
 .footer {
@@ -512,6 +609,14 @@ label {
     font-size: 22px;
     line-height: 26px;
   }
+  .breadcrumb a,
+  .breadcrumb span {
+    font-size: 12px;
+    list-style: 18px;
+  }
+  .header_search_desktop {
+    width: 400px;
+  }
   .last_added_btns {
     display: none;
   }
@@ -551,6 +656,9 @@ label {
   .services p {
     font-size: 12px;
     line-height: 18px;
+  }
+  .category_block .card_btns .date, .category_block .card_btns .date_line {
+    display: none;
   }
   .footer_top {
     padding: 40px 0;
