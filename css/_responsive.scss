@@ -19,6 +19,20 @@
         }
     }
 
+    .pagination {
+        margin-top: 24px;
+    }
+
+    .nav-tabs {
+        margin-bottom: 24px;
+        gap: 32px;
+
+        .nav-link {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+
     .breadcrumb {
         a,
         span {
@@ -91,10 +105,37 @@
     }
 
     .category_block {
+
+        .category_block_in {
+            gap: 16px;
+        }
+
         .card_btns {
             .date, .date_line {
                 display: none;
             }
+        }
+
+        &_card {
+            padding: 16px;
+
+            h6 {
+                font-size: 18px;
+                line-height: 23px;
+            }
+
+            p {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+    }
+
+    .category_title {
+        h3 {
+            font-size: 28px;
+            line-height: 33px;
+            margin: 24px 0;
         }
     }
 
@@ -271,6 +312,24 @@
         }
     }
 
+    .pagination {
+        gap: 8px;
+
+        &_btn {
+            font-size: 14px;
+            line-height: 15px;
+        }
+
+        ul {
+            gap: 6px;
+
+            a {
+                height: 37px;
+                height: 37px;
+            }
+        }
+    }
+
     .header {
         border-bottom: 1px solid $color-line;
 
@@ -302,7 +361,7 @@
         }
     }
 
-    .nav {
+    .header_nav {
         display: none;
     }
 
@@ -352,6 +411,61 @@
             margin: 20px 0 16px 0;
             font-size: 16px;
             line-height: 20px;
+        }
+    }
+
+    .category_block {
+
+        .category_block_in {
+            gap: 12px;
+        }
+
+        .card_img {
+            img {
+                width: 68px;
+                height: 98px;
+            }
+        }
+
+        &_card {
+            gap: 16px;
+            padding: 16px 16px 40px 16px;
+            position: relative;
+
+            h6 {
+                font-size: 16px;
+                line-height: 23px;
+            }
+
+            p {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+
+        .card_btns_right {
+            display: none;
+        }
+        
+        .card_btns {
+            position: absolute;
+            left: 16px;
+            bottom: 16px;
+            a {
+                font-size: 12px;
+                line-height: 14px;
+            }
+
+            .line {
+                display: none;
+            }
+        }
+    }
+
+    .category_title {
+        h3 {
+            font-size: 22px;
+            line-height: 26px;
         }
     }
 

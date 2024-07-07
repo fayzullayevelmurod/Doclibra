@@ -349,7 +349,6 @@ label {
 }
 
 .nav {
-    background: $color-fon;
 
     .main_container {
         padding: 20px 0;
@@ -369,7 +368,94 @@ label {
         }
     }
 }
+
+.header_nav {
+    background: $color-fon;
+}
 // header
+
+// tabs
+.nav-tabs {
+    margin-bottom: 32px;
+    border: none;
+    gap: 48px;
+    border-bottom: 1px solid $color-line;
+    
+    .nav-link.active {
+        border: none;
+        color: $color-blue-dark;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 5px;
+            z-index: 2;
+            border-radius: 20px;
+            background: $color-blue-dark;
+        }
+    }
+    
+    .nav-link {
+        position: relative;
+        padding: 0;
+        padding-bottom: 23px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22.4px;
+        color: $color-black;
+        border: none;
+    }
+}
+
+.tab-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+// tabs
+
+// pagination
+.pagination {
+    margin-top: 32px;
+    @include flex-full-center();
+    gap: 16px;
+
+    &_btn {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 17.6px;
+        color: $color-black;
+        padding: 11px 14px;
+    }
+
+    .disable {
+        color: $color-grey
+    }
+
+    ul {
+        @include flex-full-center();
+        gap: 8px;
+        a {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 17.6px;
+            color: $color-black;
+            width: 40px;
+            height: 40px;
+            border-radius: 4px;
+            @include flex-full-center();
+        }
+
+        a.active {
+            background: $color-fon;
+            color: $color-blue-dark;
+        }
+    }
+}
+// pagination
 
 // breadcrumb
 .breadcrumb {
@@ -399,6 +485,7 @@ label {
     height: calc(100svh - 68px);
     padding: 32px 16px;
     background: $color-white;
+    z-index: 4;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -610,6 +697,10 @@ label {
 // catogory_block
 .category_block {
 
+    .category_block_in {
+        gap: 24px;
+    }
+
     &_card {
         display: flex;
         align-items: stretch;
@@ -620,6 +711,7 @@ label {
     }
 
     .card_img {
+        flex-shrink: 0;
         img {
             width: 120px;
             height: 170px;
