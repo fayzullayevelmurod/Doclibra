@@ -145,6 +145,15 @@
         }
     }
 
+    .document_title {
+        margin: 24px 0;
+
+        h3 {
+            font-size: 28px;
+            line-height: 33px;
+        }
+    }
+
     .footer {
         &_top {
             padding: 40px 0;
@@ -166,6 +175,42 @@
             flex-direction: row;
             flex-wrap: wrap;
             gap: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .document {
+        &_in {
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .edit {
+            img {
+                width: 100%;
+            }
+        }
+
+        &_left {
+            width: 100%;
+        }
+
+        &_right {
+            width: 100%;
+        }
+
+        .anons {
+            display: none;
+        }
+
+        &_right_in {
+            display: flex;
+            flex-wrap: wrap;
+
+            .anons {
+                display: none;
+            }
         }
     }
 }
@@ -264,6 +309,106 @@
             line-height: 18px;
         }
     }
+
+    .document {
+
+        &_title {
+            h3 {
+                font-size: 22px;
+                line-height: 26px;
+            }
+        }
+
+        &_size {
+            flex-wrap: wrap;
+            gap: 16px;
+
+            .name {
+                width: auto;
+            }
+
+            li {
+                text-align: left;
+                width: calc(100% / 2 - 17px) !important;
+            }
+
+            .two_line {
+                display: none;
+            }
+        }
+
+        &_btns {
+            flex-direction: column;
+
+            .social {
+                width: 100%;
+                gap: 32px;
+            }
+
+            .btn_blue {
+                width: 100%;
+            }
+
+            &_left {
+                width: 100%;
+            }
+
+            &_right {
+                width: 100%;
+                flex-direction: column;
+
+                .btn_white {
+                    width: 100%;
+                }
+            }
+        }
+
+        .category_block_card {
+            padding: 16px;
+            gap: 12px;
+
+            .card_in {
+                gap: 16px;
+            }
+
+            .card_img {
+                img {
+                    width: 68px;
+                    height: 98px;
+                }
+            }
+
+            h6 {
+                font-size: 14px;
+                line-height: 21px;
+            }
+
+            p {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+
+        &_text_block {
+            padding: 24px;
+
+            p {
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+        
+        .card_btns_right {
+            display: none;
+        }
+
+        .card_btns {
+            .date,
+            .date_line {
+                display: none;
+            }
+        }
+    }   
 
     .footer {
         .about_list {
