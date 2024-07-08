@@ -496,6 +496,34 @@ label {
   border: 1px solid #D2DAE1;
   padding: 18px 36px;
 }
+.category_link_media {
+  display: none;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.category_link_media .category_show {
+  display: none;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.category_link_media .category_show.active {
+  display: flex;
+}
+.category .full_btn {
+  margin-top: 16px;
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  border: 1px solid #37609B;
+}
+.category .full_btn img {
+  transition: 0.3s ease;
+}
+.category .full_btn.active img {
+  transform: rotate(180deg);
+}
 
 .last_added_btns {
   display: flex;
@@ -1333,6 +1361,15 @@ label {
     padding: 16px 18px;
     font-size: 14px;
     line-height: 21px;
+  }
+  .category_list {
+    display: none;
+  }
+  .category_link_media {
+    display: flex;
+  }
+  .category .full_btn {
+    display: flex;
   }
   .services_card {
     padding: 20px;

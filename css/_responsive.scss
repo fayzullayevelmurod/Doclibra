@@ -551,6 +551,18 @@
             font-size: 14px;
             line-height: 21px;
         }
+
+        &_list {
+            display: none;
+        }
+
+        &_link_media {
+            display: flex;
+        }
+
+        .full_btn {
+            display: flex;
+        }
     }
 
     .services {

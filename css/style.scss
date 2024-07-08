@@ -623,6 +623,42 @@ label {
         border: 1px solid $color-line;
         padding: 18px 36px;
     }
+
+    &_link_media {
+        display: none;
+        flex-wrap: wrap;
+        gap: 16px;
+
+        .category_show {
+            display: none;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .category_show.active {
+            display: flex;
+        }
+    }
+
+    .full_btn {
+        margin-top: 16px;
+        width: 100%;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        border: 1px solid $color-blue-dark;
+
+        img {
+            @include transition();
+        }
+    }
+
+    .full_btn.active {
+        img {
+            transform: rotate(180deg)
+        }
+    }
 }
 // category
 

@@ -24,3 +24,13 @@ burger.addEventListener('click', () => {
     burger.classList.toggle('active');
 })
 // burger
+
+// show
+let category_show = document.querySelector('.category_show');
+let full_btn = document.querySelector('.full_btn');
+
+full_btn.addEventListener('click', () => {
+    category_show.classList.toggle('active');
+    full_btn.classList.toggle('active');
+})
+// show
