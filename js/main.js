@@ -25,12 +25,17 @@ burger.addEventListener('click', () => {
 })
 // burger
 
-// show
-let category_show = document.querySelector('.category_show');
-let full_btn = document.querySelector('.full_btn');
+try {
+    // show
+    let category_show = document.querySelector('.category_show');
+    let full_btn = document.querySelector('.full_btn');
+    let btn_icon = document.querySelector('.full_btn img');
 
-full_btn.addEventListener('click', () => {
-    category_show.classList.toggle('active');
-    full_btn.classList.toggle('active');
-})
-// show
+    full_btn.addEventListener('click', () => {
+        category_show.classList.toggle('active');
+        btn_icon.classList.toggle('active');
+    })
+    // show
+} catch(err) {
+    console.log(err);
+}
