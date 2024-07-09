@@ -29,12 +29,15 @@ try {
     // show
     let category_show = document.querySelector('.category_show');
     let full_btn = document.querySelector('.full_btn');
-    let btn_icon = document.querySelector('.full_btn img');
+    let btn_icon = document.querySelector('.full_btn_icon');
 
-    full_btn.addEventListener('click', () => {
-        category_show.classList.toggle('active');
-        btn_icon.classList.toggle('active');
-    })
+    if(full_btn) {
+        full_btn.addEventListener('click', () => {
+            category_show.classList.toggle('active');
+            btn_icon.classList.toggle('active');
+        })
+    }
+
     // show
 } catch(err) {
     console.log(err);
