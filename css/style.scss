@@ -979,13 +979,11 @@ label {
         flex-direction: column;
         gap: 20px;
 
-        .card_in {
-            display: flex;
-            gap: 24px;
-        }
-
         .card_img {
+            float: left;
             flex-shrink: 0;
+            margin-right: 24px;
+
             img {
                 width: 102px;
                 height: 144px;
@@ -1012,6 +1010,14 @@ label {
             font-weight: 400;
             line-height: 21px;
             color: $color-black;
+
+            &:not(:hover) {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
         }
 
         p.hidden {
@@ -1020,6 +1026,14 @@ label {
             display: -webkit-box;
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
+
+            &:not(:hover) {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
         }
 
         .card_btn {

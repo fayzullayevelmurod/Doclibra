@@ -64,6 +64,7 @@
                     width: 68px;
                     height: 98px;
                     border-radius: 4px;
+                    margin-right: 16px;
                 }
             }
         }
@@ -186,6 +187,10 @@
         &_in {
             flex-direction: column;
             gap: 40px;
+        }
+
+        .category_block_card {
+            min-height: auto;
         }
 
         .edit {
@@ -374,6 +379,7 @@
             }
 
             .card_img {
+                margin-right: 16px;
                 img {
                     width: 68px;
                     height: 98px;
