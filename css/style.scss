@@ -780,17 +780,11 @@ label {
 
     &_card {
         position: relative;
-        height: 210px;
-        padding: 20px;
+        min-height: 210px;
+        padding: 20px 20px 40px 20px;
         gap: 20px;
         border-radius: 8px;
         background: $color-fon;
-
-        &:hover {
-            p {
-                -webkit-line-clamp: 20;
-            }
-        }
     }
 
     .card_img {

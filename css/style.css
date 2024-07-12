@@ -617,14 +617,11 @@ label {
 }
 .category_block_card {
   position: relative;
-  height: 210px;
-  padding: 20px;
+  min-height: 210px;
+  padding: 20px 20px 40px 20px;
   gap: 20px;
   border-radius: 8px;
   background: #F5F6F8;
-}
-.category_block_card:hover p {
-  -webkit-line-clamp: 20;
 }
 .category_block .card_img {
   max-width: 120px;
@@ -1124,7 +1121,7 @@ label {
     display: none;
   }
   .category_block_card {
-    height: 240px;
+    min-height: 240px;
     padding: 16px;
     padding: 16px 16px 45px 16px;
   }
@@ -1465,13 +1462,14 @@ label {
   }
   .category_block_card {
     gap: 16px;
-    padding: 16px 16px 45px 16px;
+    padding: 16px 16px 40px 16px;
     position: relative;
-    height: auto;
+    min-height: 200px;
   }
   .category_block_card .card_link {
     font-size: 16px;
     line-height: 23px;
+    word-break: break-word;
   }
   .category_block_card p {
     font-size: 12px;
@@ -1482,6 +1480,10 @@ label {
   }
   .category_block .card_btns_right .card_icon {
     display: none;
+  }
+  .category_block .card_btns_left .card_icon {
+    font-size: 12px;
+    line-height: 14px;
   }
   .category_block .card_btns {
     width: 100%;
@@ -1513,5 +1515,13 @@ label {
   .contact form select {
     font-size: 14px;
     line-height: 21px;
+  }
+  .nav-tabs {
+    gap: 10px;
+  }
+  .nav-tabs .nav-link {
+    padding-bottom: 10px;
+    font-size: 11px;
+    line-height: 18px;
   }
 }/*# sourceMappingURL=style.css.map */

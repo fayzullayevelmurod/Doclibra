@@ -117,7 +117,7 @@
         }
 
         &_card {
-            height: 240px;
+            min-height: 240px;
             padding: 16px;
             padding: 16px 16px 45px 16px;
 
@@ -593,14 +593,15 @@
 
         &_card {
             gap: 16px;
-            padding: 16px 16px 45px 16px;
+            padding: 16px 16px 40px 16px;
             position: relative;
             // height: auto;
-            height: auto;
+            min-height: 200px;
 
             .card_link {
                 font-size: 16px;
                 line-height: 23px;
+                word-break: break-word;
             }
 
             p {
@@ -614,6 +615,13 @@
 
             .card_icon {
                 display: none;
+            }
+        }
+
+        .card_btns_left {
+            .card_icon {
+                font-size: 12px;
+                line-height: 14px;
             }
         }
         
@@ -658,6 +666,16 @@
                 font-size: 14px;
                 line-height: 21px;
             }
+        }
+    }
+
+    .nav-tabs {
+        gap: 10px;
+
+        .nav-link {
+            padding-bottom: 10px;
+            font-size: 11px;
+            line-height: 18px;
         }
     }
 
